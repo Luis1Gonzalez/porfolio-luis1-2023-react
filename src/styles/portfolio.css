@@ -1,0 +1,13 @@
+.container{
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+}
+
+.modifier-text{
+    font-size: 1rem;
+    display: -webkit-box;
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp:3;
+        overflow:hidden;
+}
+
