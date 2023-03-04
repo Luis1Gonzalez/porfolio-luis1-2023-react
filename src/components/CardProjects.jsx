@@ -16,12 +16,10 @@ export default function CardProjects() {
             .then((response => response.json()))
             .then(c => setImportCards(c))
 
-            setShow(false)
+            
     }, [])
 
-    const ifshowing = () => {
 
-    }
 
     return (
         <div className='bg-zinc-900 p-6 w-100'>
