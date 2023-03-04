@@ -7,13 +7,13 @@ export default function CardProjects() {
 
   useEffect(() => {
     const getCards = async () => {
-      const response = await fetch(import.meta.env.VITE_BACKEND_URL_CARDS, {mode:'cors'})
+      const response = await fetch(import.meta.env.VITE_BACKEND_URL_CARDS)
       const result = await response.json()
       setImportCards(result)
     }
     getCards()
   }, [])
-console.log(importCards)
+
   return (
     <div className='bg-zinc-900 p-6 w-100'>
 

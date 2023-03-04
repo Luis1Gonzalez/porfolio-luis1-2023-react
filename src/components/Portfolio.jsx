@@ -14,7 +14,7 @@ export default function Portfolio() {
       <Header />
       <About />
       <CardProjects />
-      {/* <Tools /> */}
+      <Tools />
     </div>
   )
 }
