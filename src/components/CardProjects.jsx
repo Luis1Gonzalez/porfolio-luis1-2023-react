@@ -9,14 +9,21 @@ export default function CardProjects() {
 
     useEffect(() => {
 
-        setShow(true)
+        
 
         fetch(import.meta.env.VITE_BACKEND_URL_CARDS)
 
             .then((response => response.json()))
-            .then(c => setImportCards(c))
+            .then(c => otro(c))
 
+            setShow(true)
+
+        setTimeout(() => {
             
+            setShow(false)
+            setImportCards(otro)
+        }, 3000)
+
     }, [])
 
 
@@ -26,7 +33,7 @@ export default function CardProjects() {
 
             <h1 className='text-white font-black text-2xl' >Services</h1>
 
-{show && <Spinner />}
+            {show && <Spinner />}
 
             <div className="text-stone-200 md:flex flex-wrap justify-around sm:flex">
                 {importCards?.data?.map(card => (
