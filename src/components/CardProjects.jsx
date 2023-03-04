@@ -8,12 +8,9 @@ export default function CardProjects() {
   useEffect(() => {
     const getCards = async () => {
       const response = await fetch(import.meta.env.VITE_BACKEND_URL_CARDS)
-
       const result = await response.json()
-
       setImportCards(result)
     }
-
     getCards()
   }, [])
 

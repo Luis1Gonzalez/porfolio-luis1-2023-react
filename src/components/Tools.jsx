@@ -3,15 +3,24 @@ import React, { useEffect, useState } from 'react'
 export default function Tools() {
 const [tools, setTools] = useState({})
 
+// useEffect(() => {
+
+//     fetch(import.meta.env.VITE_BACKEND_URL_TOOLS)
+
+//         .then((response => response.json()))
+//         .then(c => setTools(c))
+// },[])
+
 useEffect(() => {
+  const getTools = async () => {
+    const response = await fetch(import.meta.env.VITE_BACKEND_URL_TOOLS)
+    const result = await response.json()
+    setTools(result)
+  }
+  getTools()
+}, [])
 
-    fetch(import.meta.env.VITE_BACKEND_URL_TOOLS)
-
-        .then((response => response.json()))
-        .then(c => setTools(c))
-},[])
-
-
+console.log(tools)
   return (
     <div className='p-4 w-100 mb-5'>
     
