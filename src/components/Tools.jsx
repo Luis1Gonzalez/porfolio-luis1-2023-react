@@ -17,7 +17,9 @@ const [tools, setTools] = useState({})
     const esto = await getTools()
     setTools(esto)
   }
+useEffect(() => {
   cargador()
+},[])
 
 
 
