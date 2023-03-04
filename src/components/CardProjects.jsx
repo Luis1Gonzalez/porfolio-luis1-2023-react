@@ -6,13 +6,20 @@ export default function CardProjects() {
     const [importCards, setImportCards] = useState({})
 
     useEffect(() => {
-        
-        fetch(import.meta.env.VITE_BACKEND_URL_CARDS)
+        const getCards = async() => {
+const response = await fetch(import.meta.env.VITE_BACKEND_URL_CARDS)
 
-        .then((response => response.json()))
-        .then(c => setImportCards(c))
+const result = await response.json()
+
+setImportCards(result)
+        }
+        // fetch(import.meta.env.VITE_BACKEND_URL_CARDS)
+
+        // .then((response => response.json()))
+        // .then(c => setImportCards(c))
+        getCards()
     },[importCards])
-console.log(importCards)
+
     return (
         <div className='bg-zinc-900 p-6 w-100'>
         
