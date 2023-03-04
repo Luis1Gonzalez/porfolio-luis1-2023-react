@@ -7,16 +7,13 @@ export default function Header() {
 
 
             <div className='w-[40%] relative flex h-[100%]'>
-                <div className='bg-emerald-300 w-[67%] md:w-[58%] h-[100%]'></div>
-                <div className='w-[33%] md:w-[42%] h-[100%]'></div>
-
-                <div className='absolute z-10 h-[100%] left-[18%]'>
+                
                     <img src={fotoCV} alt="Foto del CV" className='h-[100%]' />
-                </div>
+                
             </div>
             
 
-            <div className='bg-inherit w-[60%] h-[100%] text-stone-200 flex flex-col sm:tracking-[.20em] lg:py-24 pl-9 sm:text-2xl md:text-3xl lg:text-4xl lg:font-black justify-center lg:justify-around'>
+            <div className='bg-inherit w-[50%] h-[100%] text-stone-200 flex flex-col sm:tracking-[.20em] lg:py-24 pl-9 text-sm sm:text-2xl md:text-3xl lg:text-4xl lg:font-black justify-center lg:justify-around'>
                 <p className='text-emerald-300'>Hello</p>
                 <p className=' font-bold'>I'm Luis</p>
                 <p className='text-emerald-300'>Frontend Developer</p>
