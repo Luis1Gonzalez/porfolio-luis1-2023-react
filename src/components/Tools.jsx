@@ -18,7 +18,7 @@ useEffect(() => {
     setTools(result)
   }
   getTools()
-}, [])
+}, [tools])
 
 console.log(tools)
   return (
