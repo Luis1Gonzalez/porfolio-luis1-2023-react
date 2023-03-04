@@ -3,14 +3,6 @@ import React, { useEffect, useState } from 'react'
 export default function Tools() {
 const [tools, setTools] = useState({})
 
-// useEffect(() => {
-
-//     fetch(import.meta.env.VITE_BACKEND_URL_TOOLS)
-
-//         .then((response => response.json()))
-//         .then(c => setTools(c))
-// },[])
-
 useEffect(() => {
   const getTools = async () => {
     const response = await fetch(import.meta.env.VITE_BACKEND_URL_TOOLS)
@@ -18,7 +10,7 @@ useEffect(() => {
     setTools(result)
   }
   getTools()
-}, [tools])
+}, [])
 
 console.log(tools)
   return (
