@@ -1,17 +1,9 @@
-import React, { useEffect, useState } from 'react'
+
+import useTools from '../hooks/useTools'
 
 export default function Tools() {
-const [tools, setTools] = useState({})
 
-useEffect(() => {
-  const getTools = async () => {
-    const response = await fetch(import.meta.env.VITE_BACKEND_URL_TOOLS)
-    const result = await response.json()
-    setTools(result)
-  }
-  getTools()
-}, [])
-
+const [tools] = useTools()
   return (
     <div className='p-4 w-100 mb-5'>
     
