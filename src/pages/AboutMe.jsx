@@ -7,7 +7,7 @@ export default function AboutMe() {
     const [tools] = useTools()
 
     return (
-        <div className='w-[100%] min-w-[320px] p-4'>
+        <div className='container min-w-[320px] max-w-[1280px] flex flex-col flex-wrap m-auto p-6 mb-5'>
 
             <div className='w-100'>
                 <div className='p-2 flex flex-col justify-center'>
@@ -24,7 +24,7 @@ export default function AboutMe() {
                 <div className="flex flex-wrap justify-around sm:px-10 my-8">
 
                     {tools?.data?.map(tool => (
-                        <div key={tool.id} className="my-2 w-[12%] sm:w-[10%] mx-3 flex items-center justify-center">
+                        <div key={tool.id} className="my-2 w-[12%] sm:w-[8%] lg:w-[5%] mx-3 flex items-center justify-center">
                             <img src={tool.attributes.image.data[0].attributes.url} className='' alt={`Foto de las herramientas ${tool.name}`} />
                         </div>
                     ))}
