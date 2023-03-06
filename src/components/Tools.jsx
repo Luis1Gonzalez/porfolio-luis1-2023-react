@@ -5,7 +5,7 @@ export default function Tools() {
 
   const [tools] = useTools()
   return (
-    <div className='p-6 w-100 md:mx-12 bg-zinc-900'>
+    <div className='p-6 w-100 md:mx-12 bg-zinc-900 pb-14'>
 
       <h1 className='text-white font-black text-2xl my-5' >Tools</h1>
       

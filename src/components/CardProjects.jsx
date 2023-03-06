@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
-// import { cardIndex } from "../data/objeto"
-// import { getCards } from "../models/cards.server"
+import { Link } from 'react-router-dom'
 
 export default function CardProjects() {
   const [importCards, setImportCards] = useState({})
@@ -34,7 +33,7 @@ export default function CardProjects() {
         ))}
         </div>
       </div>
-
+      <p className='font-bold text-emerald-300 text-end mt-8'><span className='hover:text-yellow-500 hover:cursor-pointer'><Link to='/projects'>See More...</Link></span></p>
     </div>
   )
 }
