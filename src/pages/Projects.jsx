@@ -26,14 +26,14 @@ export default function Projects() {
 
         <h1 className='text-white font-black text-2xl pb-4' >My Projects</h1>
 
-        <div className="flex flex-wrap justify-center flex-col sm:flex-row">
+        <div className="flex flex-wrap justify-center">
           {projects?.data?.map(project => (
-            <div className="bg-white w-100 h-[200px] sm:w-[45%] md:w-[30%] text-stone-800 m-2 rounded-md pt-2 px-2 flex flex-col justify-around" key={project.id}>
+            <div className="bg-white w-[47%] h-[200px] sm:w-[45%] md:w-[30%] text-stone-800 m-1 rounded-md pt-2 px-2 flex flex-col justify-around" key={project.id}>
               <div className="flex justify-center max-h-[60%]">
                 <img src={project.attributes.logo.data.attributes.url} alt={`logo del proyecto ${project.attributes.name}`} className='w-100' />
               </div>
               <div className="flex flex-col justify-center items-center">
-                <p className="text-2xl font-bold my-1 capitalize">{project.attributes.name}</p>
+                <p className="sm:text-2xl font-bold my-1 capitalize text-sm text-center">{project.attributes.name}</p>
               </div>
             </div>
           ))}
