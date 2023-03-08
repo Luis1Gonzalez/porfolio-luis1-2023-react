@@ -14,7 +14,7 @@ const getProjectDetails = async () => {
     setDetails(result)
 }
 getProjectDetails()
-},[])
+},[details])
 
     return(
         <div className='container min-w-[320px] max-w-[1280px] flex flex-col flex-wrap mx-auto p-6'>
@@ -53,7 +53,7 @@ getProjectDetails()
 
 </div>
 
-<p className='font-bold text-emerald-300 text-end mt-8 pr-6'><span className='hover:text-yellow-500 hover:cursor-pointer'><Link to='/'>Back</Link></span></p>
+<p className='font-bold text-emerald-300 text-end mt-8 pr-6'><span className='hover:text-yellow-500 hover:cursor-pointer'><Link to='/projects'>Back</Link></span></p>
 </div>
     )
 

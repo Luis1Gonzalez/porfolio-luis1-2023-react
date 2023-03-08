@@ -11,7 +11,7 @@ export default function CardProjects() {
       setImportCards(result)
     }
     getCards()
-  }, [])
+  }, [importCards])
 
   return (
     <div className='p-6 w-100 mb-5 md:mx-12 flex flex-col bg-stone-800'>
