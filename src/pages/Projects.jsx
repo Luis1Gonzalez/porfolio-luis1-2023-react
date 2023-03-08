@@ -16,7 +16,7 @@ export default function Projects() {
       setProjects(result)
     }
     getProjects()
-  }, [projects])
+  }, [])
 
 
   return (
