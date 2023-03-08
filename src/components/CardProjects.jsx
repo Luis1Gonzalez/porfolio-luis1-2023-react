@@ -26,7 +26,7 @@ export default function CardProjects() {
           <div key={card.id} className="my-4 sm:w-[40%] md:mx-2 xl:w-[40%] flex items-center">
 
             <div className=''>
-              <img src={card.attributes.image.data.attributes.url} alt={`Foto de la card ${card.name}`} />
+              <img src={card?.attributes?.image?.data?.attributes?.url} alt={`Foto de la card ${card?.name}`} />
             </div>
             
           </div>

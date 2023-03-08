@@ -14,7 +14,7 @@ export default function AboutMe() {
                     <h1 className='text-white font-black text-2xl pb-4' >About Me</h1>
                     <div className=' text-stone-200 text-justify'>
                         {me.map(m => (
-                            <p className='my-4' key={m.id}>{m.me}</p>
+                            <p className='my-4' key={m.id}>{m?.me}</p>
                         ))}
                     </div>
                 </div>
@@ -25,7 +25,7 @@ export default function AboutMe() {
 
                     {tools?.data?.map(tool => (
                         <div key={tool.id} className="my-2 w-[12%] sm:w-[8%] lg:w-[5%] mx-3 flex items-center justify-center">
-                            <img src={tool.attributes.image.data[0].attributes.url} className='' alt={`Foto de las herramientas ${tool.name}`} />
+                            <img src={tool?.attributes?.image?.data[0]?.attributes?.url} className='' alt={`Foto de las herramientas ${tool?.name}`} />
                         </div>
                     ))}
 
