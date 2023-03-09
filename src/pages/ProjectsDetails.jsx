@@ -34,7 +34,7 @@ export default function ProjectDetails() {
                     <p className='mb-5  md:w-[45%]'>{details?.data?.attributes?.spanish2}</p>
 
                     <div className='mb-5  md:w-[45%]'>
-                        <img src={details?.data?.attributes?.image2?.data?.attributes?.url} alt={`imagen 1 del proyecto ${details?.data?.attributes.name}`} />
+                        <img src={details?.data?.attributes?.image2?.data?.attributes?.url} alt={`imagen 2 del proyecto ${details?.data?.attributes.name}`} />
                     </div>
 
                     <div className='mb-5 md:w-[45%]'>
@@ -52,7 +52,7 @@ export default function ProjectDetails() {
                     </div>
 
                     <div className='mb-5 p-2 flex flex-col items-center md:w-[45%]'>
-                        <img className='' src={details?.data?.attributes?.image3?.data?.attributes?.url} alt={`imagen 1 del proyecto ${details?.data?.attributes.name}`} />
+                        <img className='' src={details?.data?.attributes?.image3?.data?.attributes?.url} alt={`imagen 3 del proyecto ${details?.data?.attributes.name}`} />
 
                         <a target={'_blank'} className='pointer block text-end italic text-yellow-500 capitalize' href={details?.data?.attributes?.lighthouse}>Medición según LightHouse</a>
                     </div>

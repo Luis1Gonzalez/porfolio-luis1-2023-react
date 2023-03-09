@@ -7,6 +7,7 @@ import ProjectDetails from "./pages/ProjectsDetails"
 
 
 
+
 function App() {
 
 
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
+
         <Routes>
 
           <Route path='/' element={<Portfolio />}></Route>
