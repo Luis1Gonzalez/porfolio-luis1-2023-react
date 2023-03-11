@@ -1,13 +1,16 @@
-
+import useLenguage from "../hooks/useLenguage";
 import useTools from '../hooks/useTools'
 
 export default function Tools() {
 
+  const {leng} = useLenguage()
+
   const [tools] = useTools()
+
   return (
     <div className='p-6 w-100 md:mx-12 bg-zinc-900 pb-14'>
 
-      <h1 className='text-white font-black text-2xl my-5' >Tools</h1>
+      <h1 className='text-white font-black text-2xl my-5' >{leng==='spanish' ?'Herramientas' : 'Tools'}</h1>
       
       <div className="text-stone-200 flex flex-wrap justify-around sm:px-10">
         {tools?.data?.map(tool => (

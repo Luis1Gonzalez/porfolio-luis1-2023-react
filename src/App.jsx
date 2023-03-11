@@ -4,18 +4,19 @@ import Header from "./shared/Header"
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Projects from "./pages/Projects"
 import ProjectDetails from "./pages/ProjectsDetails"
-
-
+import { LenguageProvider } from "./context/LenguageProvider"
+import useLenguage from "./hooks/useLenguage"
 
 
 function App() {
 
-
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Header />
 
+    
+      <BrowserRouter>
+
+        <Header />
+        <LenguageProvider>
         <Routes>
 
           <Route path='/' element={<Portfolio />}></Route>
@@ -24,8 +25,10 @@ function App() {
           <Route path='/project/:id/:codeUrl' element={<ProjectDetails />}></Route>
 
         </Routes>
+        </LenguageProvider>
       </BrowserRouter>
-    </div>
+    
+
   )
 }
 

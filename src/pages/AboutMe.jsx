@@ -1,25 +1,46 @@
-import { me } from '../data/objeto'
+// import { me } from '../data/objeto'
 import { Link } from 'react-router-dom'
 import useTools from '../hooks/useTools'
+import useLenguage from "../hooks/useLenguage";
+import { meSpanish } from '../data/objeto'
+import { meEnglish } from '../data/objeto'
 
 export default function AboutMe() {
 
     const [tools] = useTools()
 
+    const { leng } = useLenguage()
+
+    // console.log(meTranslation)
     return (
         <div className='container min-w-[320px] max-w-[1280px] flex flex-col flex-wrap m-auto p-6 mb-5'>
 
             <div className='w-100'>
-                <div className='p-2 flex flex-col justify-center'>
-                    <h1 className='text-white font-black text-2xl pb-4' >About Me</h1>
-                    <div className=' text-stone-200 text-justify'>
-                        {me.map(m => (
-                            <p className='my-4' key={m.id}>{m?.me}</p>
-                        ))}
-                    </div>
-                </div>
 
-                <p className='text-stone-200 my-4'>Las tecnologias con las que he trabajado son:</p>
+                {leng === 'spanish' ? (
+                    <div className='p-2 flex flex-col justify-center'>
+                        <h1 className='text-white font-black text-2xl pb-4' >Acerca de mi</h1>
+                        <div className=' text-stone-200 text-justify'>
+                            {meSpanish.map(m => (
+                                <p className='my-4' key={m.id}>{m?.me}</p>
+                            ))}
+                        </div>
+                    </div>
+                ) : (
+                    <div className='p-2 flex flex-col justify-center'>
+                        <h1 className='text-white font-black text-2xl pb-4' >Abaut Me</h1>
+                        <div className=' text-stone-200 text-justify'>
+                            {meEnglish.map(m => (
+                                <p className='my-4' key={m.id}>{m?.me}</p>
+                            ))}
+                        </div>
+                    </div>
+                )
+                }
+
+
+
+                <p className='text-stone-200 my-4'>{leng === 'spanish' ? 'Las herramientas con las que he trabajado son:' : 'The tools that I have worked with are:'} </p>
 
                 <div className="flex flex-wrap justify-around sm:px-10 my-8">
 

@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
+import useLenguage from "../hooks/useLenguage";
 
 
 
 export default function Projects() {
   const [projects, setProjects] = useState({})
   const navigate = useNavigate()
+  const { leng } = useLenguage()
 
   useEffect(() => {
     const getProjects = async () => {
@@ -18,13 +20,13 @@ export default function Projects() {
     getProjects()
   }, [])
 
-
+console.log(leng)
   return (
     <div className='container min-w-[320px] max-w-[1280px] flex flex-col flex-wrap m-auto p-6 mb-5'>
 
       <div className='w-100'>
 
-        <h1 className='text-white font-black text-2xl pb-4' >My Projects</h1>
+        <h1 className='text-white font-black text-2xl pb-4' >{leng === 'spanish' ? 'Mis Proyectos' : 'My Projects'}</h1>
 
         <div className="flex flex-wrap justify-center">
           {projects?.data?.map(project => (

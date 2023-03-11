@@ -1,8 +1,13 @@
 import { useEffect, useState } from "react"
 import { Link } from 'react-router-dom'
+import useLenguage from "../hooks/useLenguage";
+import { cardEnglish, cardSpanish } from "../data/objeto";
 
 export default function CardProjects() {
   const [importCards, setImportCards] = useState({})
+  const [transImportCards, setTransImportCards] = useState('meSpanish')
+
+  const {leng} = useLenguage()
 
   useEffect(() => {
     const getCards = async () => {
@@ -11,29 +16,42 @@ export default function CardProjects() {
       setImportCards(result)
     }
     getCards()
-  }, [importCards])
+  }, [])
+
+useEffect(() => {
+    const traslation = () => {
+        if(transImportCards === cardSpanish){
+          setTransImportCards(cardEnglish)
+        }else{
+          setTransImportCards(cardSpanish)  
+        }
+    }
+    traslation()
+},[leng])
 
   return (
     <div className='p-6 w-100 mb-5 md:mx-12 flex flex-col bg-stone-800'>
 
-      <h1 className='text-white font-black text-2xl' >My Projects</h1>
+      <h1 className='text-white font-black text-2xl' >{transImportCards[0].title}</h1>
 
       <div className=" md:flex">
-      <p className=" text-stone-200 my-5 text-justify flex items-center">Los proyectos que he venido desarrollando durante mi proceso de formacion como desarrollador Web y algunos que he desarrollado para empresas y particulares tanto con WordPress como en codigo nativo son los sigueintes:</p>
+      <p className=" text-stone-200 my-5 text-justify flex items-center">{transImportCards[0].card}</p>
       <div className="text-stone-200 flex flex-wrap justify-around">
         {importCards?.data?.map(card => (
 
           <div key={card.id} className="my-4 sm:w-[40%] md:mx-2 xl:w-[40%] flex items-center">
 
             <div className=''>
-              <img src={card?.attributes?.image?.data?.attributes?.url} alt={`Foto de la card ${card?.name}`} />
+              <img className="text-white" src={card?.attributes?.image?.data?.attributes?.url} alt={`Foto de la card ${card?.name}`} />
             </div>
             
           </div>
         ))}
         </div>
       </div>
-      <p className='font-bold text-emerald-300 text-end mt-8'><span className='hover:text-yellow-500 hover:cursor-pointer'><Link to='/projects'>See More...</Link></span></p>
+      <p className='font-bold text-emerald-300 text-end mt-8'><span className='hover:text-yellow-500 hover:cursor-pointer'><Link to='/projects'>
+        {leng==='spanish' ? 'Ver Mas...' : 'See More...'}
+      </Link></span></p>
     </div>
   )
 }

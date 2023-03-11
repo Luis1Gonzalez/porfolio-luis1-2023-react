@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import useLenguage from "../hooks/useLenguage";
 
 export default function ProjectDetails() {
     const { id } = useParams()
     const [details, setDetails] = useState({})
-
+const { leng } = useLenguage()
 
     useEffect(() => {
         const getProjectDetails = async () => {
@@ -15,7 +16,7 @@ export default function ProjectDetails() {
         }
         getProjectDetails()
     }, [])
-    console.log(details?.data?.attributes?.tecnology1)
+
     return (
         <div className='container min-w-[320px] max-w-[1280px] flex flex-col flex-wrap mx-auto p-6'>
 
@@ -25,20 +26,20 @@ export default function ProjectDetails() {
 
 
                 <div className='text-stone-200 text-justify md:flex flex-wrap justify-evenly'>
-                    <p className='mb-5  md:w-[45%]'>{details?.data?.attributes?.spanish1}</p>
+                    <p className='mb-5  md:w-[45%]'>{leng === 'spanish' ? details?.data?.attributes?.spanish1 : details?.data?.attributes?.english1}</p>
 
                     <div className='mb-5  md:w-[45%]'>
                         <img src={details?.data?.attributes?.image1?.data?.attributes?.url} alt={`imagen 1 del proyecto ${details?.data?.attributes.name}`} />
                     </div>
 
-                    <p className='mb-5  md:w-[45%]'>{details?.data?.attributes?.spanish2}</p>
+                    <p className='mb-5  md:w-[45%]'>{leng === 'spanish' ? details?.data?.attributes?.spanish2 : details?.data?.attributes?.english2}</p>
 
                     <div className='mb-5  md:w-[45%]'>
                         <img src={details?.data?.attributes?.image2?.data?.attributes?.url} alt={`imagen 2 del proyecto ${details?.data?.attributes.name}`} />
                     </div>
 
                     <div className='mb-5 md:w-[45%]'>
-                        <p className='my-2 text-xl tex-white font-bold'>Tecnologias usadas en este proyecto:</p>
+                        <p className='my-2 text-xl tex-white font-bold'>{leng === 'spanish' ? 'Tecnologías usadas en este proyecto:' : 'Technologies used in this project'}</p>
                         <ul>
                             <li className='text-stone-400 text-sm italic'>{details?.data?.attributes?.tecnology1}</li>
                             <li className='text-stone-400 text-sm italic'>{details?.data?.attributes?.tecnology2}</li>
@@ -54,7 +55,7 @@ export default function ProjectDetails() {
                     <div className='mb-5 p-2 flex flex-col items-center md:w-[45%]'>
                         <img className='' src={details?.data?.attributes?.image3?.data?.attributes?.url} alt={`imagen 3 del proyecto ${details?.data?.attributes.name}`} />
 
-                        <a target={'_blank'} className='pointer block text-end italic text-yellow-500 capitalize' href={details?.data?.attributes?.lighthouse}>Medición según LightHouse</a>
+                        <a target={'_blank'} className='pointer block text-end italic text-yellow-500 capitalize' href={details?.data?.attributes?.lighthouse}>{leng === 'spanish' ? 'Medición según LightHouse' : 'Measurement according to LightHouse'}</a>
                     </div>
 
                 </div>

@@ -6,8 +6,20 @@ import { RiFolderDownloadFill } from "react-icons/ri";
 import { CgPhone } from "react-icons/cg";
 import lenguage from '../assets/lenguage.png'
 import cvLuisGonzalez from '../assets/cvLuisGonzalez.pdf'
+import useLenguage from "../hooks/useLenguage";
+
 
 export default function Menu() {
+    const {leng, setLeng} = useLenguage()
+
+ const handleChangeLenguage = () => {
+if(leng === 'spanish'){
+    setLeng('english')
+}else{
+    setLeng('spanish')
+}
+}
+console.log(leng)
     return (
         <div className='bg-zinc-900 text-stone-200 flex items-center justify-between pt-3 px-3'>
 
@@ -48,7 +60,7 @@ export default function Menu() {
 
 
             <button className="w-[50px] h-[50%] flex justify-center">
-                <img className="w-[50%]" src={lenguage} alt="image de multi-lenguaje" />
+                <img className="w-[50%]" src={lenguage} alt="image de multi-lenguaje" onClick={() => handleChangeLenguage() }/>
             </button>
 
         </div>
