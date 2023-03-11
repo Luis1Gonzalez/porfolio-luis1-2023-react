@@ -20,7 +20,6 @@ export default function Projects() {
     getProjects()
   }, [])
 
-console.log(leng)
   return (
     <div className='container min-w-[320px] max-w-[1280px] flex flex-col flex-wrap m-auto p-6 mb-5'>
 
