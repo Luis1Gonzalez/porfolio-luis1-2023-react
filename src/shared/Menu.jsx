@@ -19,7 +19,7 @@ if(leng === 'spanish'){
     setLeng('spanish')
 }
 }
-console.log(leng)
+
     return (
         <div className='bg-zinc-900 text-stone-200 flex items-center justify-between pt-3 px-3'>
 

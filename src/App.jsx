@@ -5,7 +5,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Projects from "./pages/Projects"
 import ProjectDetails from "./pages/ProjectsDetails"
 import { LenguageProvider } from "./context/LenguageProvider"
-import useLenguage from "./hooks/useLenguage"
+
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           <Route path="/aboutme" element={<AboutMe />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
           <Route path='/project/:id/:codeUrl' element={<ProjectDetails />}></Route>
-
+        
         </Routes>
         </LenguageProvider>
       </BrowserRouter>
