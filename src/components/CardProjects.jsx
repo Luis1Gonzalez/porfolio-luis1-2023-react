@@ -7,6 +7,7 @@ import Loading from "./Loading";
 export default function CardProjects() {
   const [importCards, setImportCards] = useState({})
   const [transImportCards, setTransImportCards] = useState('meSpanish')
+  const [charging, setCharging] = useState(false)
 
   const {leng} = useLenguage()
 
@@ -30,8 +31,6 @@ useEffect(() => {
     traslation()
 },[leng])
 
-const [charging, setCharging] = useState(false)
-
 useEffect(() => {
   const ifTools = () => {
     if(importCards === importCards){
@@ -43,8 +42,6 @@ useEffect(() => {
     ifTools()
 },[importCards])
 
-
-console.log(importCards)
   return (
     <>
     {charging ?

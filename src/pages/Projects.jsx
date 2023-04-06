@@ -2,11 +2,13 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 import useLenguage from "../hooks/useLenguage";
+import Loading from "../components/Loading";
 
 
 
 export default function Projects() {
   const [projects, setProjects] = useState({})
+  const [charging, setCharging] = useState(false)
   const navigate = useNavigate()
   const { leng } = useLenguage()
 
@@ -20,7 +22,20 @@ export default function Projects() {
     getProjects()
   }, [])
 
+  useEffect(() => {
+    const ifProjects = () => {
+      if(projects === projects){
+        setCharging(true)
+      }else{
+        setCharging(false)
+      }
+      }
+      ifProjects()
+  },[projects])
+
   return (
+    <>
+    {charging ?
     <div className='container min-w-[320px] max-w-[1280px] flex flex-col flex-wrap m-auto p-6 mb-5'>
 
       <div className='w-100'>
@@ -46,11 +61,10 @@ export default function Projects() {
 
       <p className='font-bold text-emerald-300 text-end mt-8 pr-6'><span className='hover:text-yellow-500 hover:cursor-pointer'><Link to='/'>Back</Link></span></p>
 
-
-
-
-
-
     </div>
+    :
+    <Loading />
+    }
+    </>
   )
 }
