@@ -1,5 +1,9 @@
+import { useEffect, useState } from "react";
 import useLenguage from "../hooks/useLenguage";
 import useTools from '../hooks/useTools'
+import Loading from "./Loading";
+
+
 
 export default function Tools() {
 
@@ -7,8 +11,26 @@ export default function Tools() {
 
   const [tools] = useTools()
 
+  const [charging, setCharging] = useState(false)
+
+  useEffect(() => {
+    const ifTools = () => {
+      if(tools === tools){
+        setCharging(true)
+      }else{
+        setCharging(false)
+      }
+      }
+      ifTools(tools)
+  },[tools])
+
+
+ console.log(charging)
   return (
-    <div className='p-6 w-100 md:mx-12 bg-zinc-900 pb-14'>
+<>
+    {charging ? 
+
+      <div className='p-6 w-100 md:mx-12 bg-zinc-900 pb-14'>
 
       <h1 className='text-white font-black text-2xl my-5' >{leng==='spanish' ?'Herramientas' : 'Tools'}</h1>
       
@@ -25,5 +47,10 @@ export default function Tools() {
       </div>
 
     </div>
+
+:
+<Loading />
+}
+    </>
   )
 }

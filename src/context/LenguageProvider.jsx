@@ -7,12 +7,15 @@ const LenguageContext = createContext()
 const LenguageProvider = ({ children }) => {
 
 const [leng, setLeng] = useState('spanish')
+const [charging, setCharging] = useState(true)
 
     return (
         <LenguageContext.Provider
             value={{
                 setLeng,
-                leng
+                leng,
+                charging,
+                setCharging
             }}>
             {children}
         </LenguageContext.Provider>

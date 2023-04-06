@@ -17,6 +17,5 @@ useEffect(() => {
     requestAPI()
   }, [])
 
-
   return [result]
 }
