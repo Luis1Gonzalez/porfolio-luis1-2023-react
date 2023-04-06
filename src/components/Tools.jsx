@@ -25,7 +25,6 @@ export default function Tools() {
   },[tools])
 
 
- console.log(charging)
   return (
 <>
     {charging ? 

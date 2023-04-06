@@ -25,8 +25,6 @@ export default function AboutMe() {
         ifTools()
     },[tools])
     
-    
-    console.log(tools)
 
     return (
         <>
