@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Link } from 'react-router-dom'
 import useLenguage from "../hooks/useLenguage";
 import { cardEnglish, cardSpanish } from "../data/objeto";
+import Loading from "./Loading";
 
 export default function CardProjects() {
   const [importCards, setImportCards] = useState({})
@@ -29,7 +30,24 @@ useEffect(() => {
     traslation()
 },[leng])
 
+const [charging, setCharging] = useState(false)
+
+useEffect(() => {
+  const ifTools = () => {
+    if(importCards === importCards){
+      setCharging(true)
+    }else{
+      setCharging(false)
+    }
+    }
+    ifTools()
+},[importCards])
+
+
+console.log(importCards)
   return (
+    <>
+    {charging ?
     <div className='p-6 w-100 mb-5 md:mx-12 flex flex-col bg-stone-800'>
 
       <h1 className='text-white font-black text-2xl' >{transImportCards[0].title}</h1>
@@ -52,6 +70,10 @@ useEffect(() => {
       <p className='font-bold text-emerald-300 text-end mt-8'><span className='hover:text-yellow-500 hover:cursor-pointer'><Link to='/projects'>
         {leng==='spanish' ? 'Ver Mas...' : 'See More...'}
       </Link></span></p>
-    </div>
+    </div>    
+    :
+    <Loading />
+  }
+    </>
   )
 }

@@ -21,7 +21,7 @@ export default function Tools() {
         setCharging(false)
       }
       }
-      ifTools(tools)
+      ifTools()
   },[tools])
 
 
