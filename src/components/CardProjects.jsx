@@ -43,7 +43,7 @@ useEffect(() => {
     }
     ifTools()
 },[importCards])
-console.log(alternativeCards[0])
+
   return (
     <>
     {charging ?
