@@ -9,7 +9,7 @@ import { alternativeCards } from "../data/alternative";
 export default function CardProjects() {
   const [importCards, setImportCards] = useState([])
   const [transImportCards, setTransImportCards] = useState('meSpanish')
-  // const [charging, setCharging] = useState(false)
+  const [charging, setCharging] = useState(false)
 
   const {leng} = useLenguage()
 
@@ -33,16 +33,16 @@ useEffect(() => {
     traslation()
 },[leng])
 
-// useEffect(() => {
-//   const ifTools = () => {
-//     if(importCards === importCards){
-//       setCharging(true)
-//     }else{
-//       setCharging(false)
-//     }
-//     }
-//     ifTools()
-// },[importCards])
+useEffect(() => {
+  const ifTools = () => {
+    if(importCards === importCards){
+      setCharging(true)
+    }else{
+      setCharging(false)
+    }
+    }
+    ifTools()
+},[importCards])
 
 console.log(importCards)
   return (
@@ -50,28 +50,21 @@ console.log(importCards)
     
     <div className='p-6 w-100 mb-5 md:mx-12 flex flex-col bg-stone-800'>
 
-      <h1 className='text-white font-black text-2xl' >{transImportCards[0].title}</h1>
+      <h1 className='text-red-700 font-black text-2xl' >{transImportCards[0].title}</h1>
 
       <div className=" md:flex">
       <p className=" text-stone-200 my-5 text-justify flex items-center">{transImportCards[0].card}</p>
       <div className="text-stone-200 flex flex-wrap justify-around">
         {!importCards ? (
+          alternativeCards.map(altCard => (
+            <div key={altCard.id} className="my-4 sm:w-[40%] md:mx-2 xl:w-[40%] flex items-center bg-red-700 p-1">
 
-alternativeCards ? (
-  alternativeCards.map(altCard => (
-    <div key={altCard.id} className="my-4 sm:w-[40%] md:mx-2 xl:w-[40%] flex items-center bg-red-700 p-1">
-
-    <div className=''>
-      <img className="text-white" src={altCard.image} alt={`Foto de la card ${altCard.id}`} />
-    </div>
-    
-  </div>
-  ))
-) : (
-  <Loading />
-)
-          
-          
+            <div className=''>
+              <img className="text-white" src={altCard.image} alt={`Foto de la card ${altCard.id}`} />
+            </div>
+            
+          </div>
+          ))
           ) : (
             importCards?.data?.map(card => (
 
