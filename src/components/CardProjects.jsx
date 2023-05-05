@@ -9,7 +9,7 @@ import { alternativeCards } from "../data/alternative";
 export default function CardProjects() {
   const [importCards, setImportCards] = useState([])
   const [transImportCards, setTransImportCards] = useState('meSpanish')
-  const [charging, setCharging] = useState(false)
+  // const [charging, setCharging] = useState(false)
 
   const {leng} = useLenguage()
 
@@ -33,18 +33,17 @@ useEffect(() => {
     traslation()
 },[leng])
 
-useEffect(() => {
-  const ifTools = () => {
-    if(importCards === importCards){
-      setCharging(true)
-    }else{
-      setCharging(false)
-    }
-    }
-    ifTools()
-},[importCards])
+// useEffect(() => {
+//   const ifTools = () => {
+//     if(importCards === importCards){
+//       setCharging(true)
+//     }else{
+//       setCharging(false)
+//     }
+//     }
+//     ifTools()
+// },[importCards])
 
-console.log(importCards)
   return (
     <>
     
