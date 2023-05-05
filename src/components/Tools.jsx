@@ -49,7 +49,7 @@ export default function Tools() {
                 <div key={altTool.id} className="my-2 w-[12%] sm:w-[8%] lg:w-[5%] mx-3 flex items-center justify-center">
 
                   <div className=''>
-                    <img src={altTool.image} className='' alt={`Foto de las herramientas ${altTool.name}`} />
+                    <img src={altTool.logo} className='' alt={`Foto de las herramientas ${altTool.name}`} />
                   </div>
                 </div>
               ))
