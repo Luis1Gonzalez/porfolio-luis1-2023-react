@@ -49,20 +49,20 @@ const alternativeTools = [
 export { alternativeTools }
 
 const alternativeLogoProjects = [
-    {id:1, logo: zuccheros, name:'ZuccherosCakes'},
-    {id:2, logo: weatherApp, name:'weatherApp'},
-    {id:3, logo: barra, name:'Barra Libre 45'},
-    {id:4, logo: laCartelera, name:'La Cartelera.es'},
-    {id:5, logo: tiktac, name:'Tik - Tac'},
-    {id:6, logo: euroMecanic, name:'Euro-Mecanica'},
-    {id:7, logo: portfolio, name:'Portfolio - 2022'},
-    {id:8, logo: controlGastos, name:'Control de Gastos'},
-    {id:9, logo: autoseguro, name:'Auto - Seguro'},
-    {id:10, logo: cryptoCalcul, name:'CryptoCalculator'},
-    {id:11, logo: myCities, name:'My Cities'},
-    {id:12, logo: zacaro, name:'JZ Diseños & Muebles'},
-    {id:13, logo: notiApp, name:'News Channel'},
-    {id:14, logo: menu, name:'Menú de Muestra'},
-    {id:15, logo: barraDos, name:'Barra Libre 45 2.0'}
+    {id:1, logo: zuccheros, name:'ZuccherosCakes', url:'zuccheros-cakes', web:'https://zuccheroscakes-cl.netlify.app/', github:'https://github.com/Luis1Gonzalez/zucherosCakes'},
+    {id:2, logo: weatherApp, name:'weatherApp', url:'weather-app', web:'https://weather-1-app.netlify.app/', github:'https://github.com/Luis1Gonzalez/weather-app'},
+    {id:3, logo: barra, name:'Barra Libre 45', url:'barra-libre-45', web:'https://barra-libre-45.netlify.app/', github:'https://github.com/Luis1Gonzalez/barra-libre-45'},
+    {id:4, logo: laCartelera, name:'La Cartelera.es', url:'la-cartelera-es', web:'https://la-cartelera-es.netlify.app/', github:'https://github.com/Luis1Gonzalez/laCarteleraEs'},
+    {id:5, logo: tiktac, name:'Tik - Tac', url:'tik-tac', web:'https://tik-tac.netlify.app/', github:'https://github.com/Luis1Gonzalez/tik-tac'},
+    {id:6, logo: euroMecanic, name:'Euro-Mecanica', url:'eutomecanica', web:'https://talleres-euromecanica.netlify.app/', github:'https://github.com/Luis1Gonzalez/euroMecanica'},
+    {id:7, logo: portfolio, name:'Portfolio - 2022', url:'mi-portafolio-2022', web:'https://portafolio-luis1gonzalez.netlify.app/', github:'https://github.com/Luis1Gonzalez/portafolio-luis1gonzalez'},
+    {id:8, logo: controlGastos, name:'Control de Gastos', url:'control-de-gastos', web:'https://control-gastos-presupuesto-mes.netlify.app/', github:'https://github.com/Luis1Gonzalez/control-gastos'},
+    {id:9, logo: autoseguro, name:'Auto - Seguro', url:'auto-seguro', web:'https://auto-seguro.netlify.app/', github:'https://github.com/Luis1Gonzalez/auto-seguro'},
+    {id:10, logo: cryptoCalcul, name:'CryptoCalculator', url:'crypto-calculator', web:'https://my-crypto-calculator.netlify.app/', github:'https://github.com/Luis1Gonzalez/crypto-calculator'},
+    {id:11, logo: myCities, name:'My Cities', url:'my-cities', web:'https://mycities.vercel.app/', github:'https://github.com/Luis1Gonzalez/MyCitiesRemix'},
+    {id:12, logo: zacaro, name:'JZ Diseños & Muebles', url:'jz-disenos-and-muebles', web:'https://jz-disenos-y-muebles.netlify.app/', github:'https://github.com/Luis1Gonzalez/jz-diseno'},
+    {id:13, logo: notiApp, name:'News Channel', url:'news-channel', web:'https://newschanel.netlify.app/', github:'https://github.com/Luis1Gonzalez/canal-de-noticias'},
+    {id:14, logo: menu, name:'Menú de Muestra', url:'menu-de-muestra', web:'https://menu-muestra.netlify.app/', github:'https://github.com/Luis1Gonzalez/menu-muestra'},
+    {id:15, logo: barraDos, name:'Barra Libre 45 2.0', url:'barra-libre-45-2-0', web:'https://barra-libre-45-2.netlify.app/', github:'https://github.com/Luis1Gonzalez/barra-libre-45-2.0'}
 ]
 export { alternativeLogoProjects }

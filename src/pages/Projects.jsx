@@ -30,7 +30,7 @@ export default function Projects() {
 
               alternativeLogoProjects ? (
                 alternativeLogoProjects.map(altProject => (
-                  <div className="bg-white  pointer w-[47%] h-[200px] sm:w-[45%] md:w-[30%] text-stone-800 m-1 rounded-md pt-2 px-2 flex flex-col justify-around" key={altProject.id} onClick={() => navigate(`/project/${project.id}/${project.attributes.codeUrl}`)}>
+                  <div className="bg-white  pointer w-[47%] h-[200px] sm:w-[45%] md:w-[30%] text-stone-800 m-1 rounded-md pt-2 px-2 flex flex-col justify-around" key={altProject.id} onClick={() => navigate(`/project/${altProject.id}/${altProject.url}`)}>
                     <div className="flex justify-center max-h-[60%]">
                       <img src={altProject.logo} alt={`logo del proyecto ${altProject.name}`} className='w-100' />
                     </div>

@@ -11,11 +11,11 @@ export default function About() {
     const {leng} = useLenguage()
 
 
-const [meTranslation, setMeTranslation] = useState('meSpanish')
+const [meTranslation, setMeTranslation] = useState(leng)
 
 useEffect(() => {
     const traslation = () => {
-        if(meTranslation === meSpanish){
+        if(leng === 'english'){
             setMeTranslation(meEnglish)
         }else{
             setMeTranslation(meSpanish)  
@@ -52,3 +52,28 @@ useEffect(() => {
         </div>
     )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const [meTranslation, setMeTranslation] = useState('meSpanish')
+
+// useEffect(() => {
+//     const traslation = () => {
+//         if(meTranslation === meSpanish){
+//             setMeTranslation(meEnglish)
+//         }else{
+//             setMeTranslation(meSpanish)  
+//         }
+//     }
+//     traslation()
+// },[leng])

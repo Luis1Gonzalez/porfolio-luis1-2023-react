@@ -6,12 +6,27 @@ import { meSpanish } from '../data/objeto'
 import { meEnglish } from '../data/objeto'
 import Loading from '../components/Loading';
 import { alternativeTools } from '../data/alternative';
+import { useEffect, useState } from 'react'
 
 export default function AboutMe() {
 
     const [tools] = useTools()
 
     const { leng } = useLenguage()
+
+    const [aboutMeTranslation, setaboutMeTranslation] = useState(leng)
+
+    useEffect(() => {
+        const traslation = () => {
+            if(leng === 'english'){
+                setaboutMeTranslation(meEnglish)
+            }else{
+                setaboutMeTranslation(meSpanish)  
+            }
+        }
+        traslation()
+    },[leng])
+
 
     return (
         <>
@@ -20,26 +35,18 @@ export default function AboutMe() {
 
                 <div className='w-100'>
 
-                    {leng === 'spanish' ? (
+
                         <div className='p-2 flex flex-col justify-center'>
                             <h1 className='text-white font-black text-2xl pb-4' >Acerca de mi</h1>
                             <div className=' text-stone-200 text-justify'>
-                                {meSpanish.map(m => (
-                                    <p className='my-4' key={m.id}>{m?.me}</p>
-                                ))}
+                                
+                                    <p className='my-4'>{aboutMeTranslation[0].me}</p>
+                                    <p className='my-4'>{aboutMeTranslation[1].me}</p>
+                                    <p className='my-4'>{aboutMeTranslation[2].me}</p>
+                                
                             </div>
                         </div>
-                    ) : (
-                        <div className='p-2 flex flex-col justify-center'>
-                            <h1 className='text-white font-black text-2xl pb-4' >Abaut Me</h1>
-                            <div className=' text-stone-200 text-justify'>
-                                {meEnglish.map(m => (
-                                    <p className='my-4' key={m.id}>{m?.me}</p>
-                                ))}
-                            </div>
-                        </div>
-                    )
-                    }
+                    
 
                     <p className='text-stone-200 my-4'>{leng === 'spanish' ? 'Las herramientas con las que he trabajado son:' : 'The tools that I have worked with are:'} </p>
 
