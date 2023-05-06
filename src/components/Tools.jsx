@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import useLenguage from "../hooks/useLenguage";
 import useTools from '../hooks/useTools'
 import Loading from "./Loading";
@@ -12,19 +12,19 @@ export default function Tools() {
 
   const [tools] = useTools()
 
-  const [charging, setCharging] = useState(false)
+  // const [charging, setCharging] = useState(false)
 
-  useEffect(() => {
-    const ifTools = () => {
-      if (tools === tools) {
-        setCharging(true)
-      } else {
-        setCharging(false)
-      }
-    }
-    ifTools()
-  }, [tools])
-  console.log(tools)
+  // useEffect(() => {
+  //   const ifTools = () => {
+  //     if (tools === tools) {
+  //       setCharging(true)
+  //     } else {
+  //       setCharging(false)
+  //     }
+  //   }
+  //   ifTools()
+  // }, [tools])
+
   return (
     <>
       {!tools ?
