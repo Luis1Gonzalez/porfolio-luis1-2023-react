@@ -13,7 +13,6 @@ export default function AboutMe() {
 
     const { leng } = useLenguage()
 
-console.log(leng)
     return (
         <>
 
