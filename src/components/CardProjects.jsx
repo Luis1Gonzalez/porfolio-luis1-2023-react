@@ -49,7 +49,7 @@ useEffect(() => {
     
     <div className='p-6 w-100 mb-5 md:mx-12 flex flex-col bg-stone-800'>
 
-      <h1 className='text-red-700 font-black text-2xl' >{transImportCards[0].title}</h1>
+      <h1 className='text-white font-black text-2xl' >{transImportCards[0].title}</h1>
 
       <div className=" md:flex">
       <p className=" text-stone-200 my-5 text-justify flex items-center">{transImportCards[0].card}</p>
