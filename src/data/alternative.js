@@ -52,5 +52,17 @@ const alternativeLogoProjects = [
     {id:1, logo: zuccheros, name:'ZuccherosCakes'},
     {id:2, logo: weatherApp, name:'weatherApp'},
     {id:3, logo: barra, name:'Barra Libre 45'},
+    {id:4, logo: laCartelera, name:'La Cartelera.es'},
+    {id:5, logo: tiktac, name:'Tik - Tac'},
+    {id:6, logo: euroMecanic, name:'Euro-Mecanica'},
+    {id:7, logo: portfolio, name:'Portfolio - 2022'},
+    {id:8, logo: controlGastos, name:'Control de Gastos'},
+    {id:9, logo: autoseguro, name:'Auto - Seguro'},
+    {id:10, logo: cryptoCalcul, name:'CryptoCalculator'},
+    {id:11, logo: myCities, name:'My Cities'},
+    {id:12, logo: zacaro, name:'JZ Diseños & Muebles'},
+    {id:13, logo: notiApp, name:'News Channel'},
+    {id:14, logo: menu, name:'Menú de Muestra'},
+    {id:15, logo: barraDos, name:'Barra Libre 45 2.0'}
 ]
 export { alternativeLogoProjects }
