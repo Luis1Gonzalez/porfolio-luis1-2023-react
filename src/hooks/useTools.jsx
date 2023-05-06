@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 export default function useTools() {
 
-const [result, setResult] = useState({})
+const [result, setResult] = useState([])
 
 useEffect(() => {
    

@@ -44,7 +44,7 @@ useEffect(() => {
       <div className="text-stone-200 flex flex-wrap justify-around">
         {alternativeCards ? (
         alternativeCards.map(altCard => (
-            <div key={altCard.id} className="my-4 sm:w-[40%] md:mx-2 xl:w-[40%] flex items-center bg-red-700 p-1">
+            <div key={altCard.id} className="my-4 sm:w-[40%] md:mx-2 xl:w-[40%] flex items-center">
 
             <div className=''>
               <img className="text-white" src={altCard.image} alt={`Foto de la card ${altCard.id}`} />

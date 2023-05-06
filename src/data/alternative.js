@@ -49,6 +49,8 @@ const alternativeTools = [
 export { alternativeTools }
 
 const alternativeLogoProjects = [
-    {id:1, logo:{}, name:''}
+    {id:1, logo: zuccheros, name:'ZuccherosCakes'},
+    {id:2, logo: weatherApp, name:'weatherApp'},
+    {id:3, logo: barra, name:'Barra Libre 45'},
 ]
 export { alternativeLogoProjects }
