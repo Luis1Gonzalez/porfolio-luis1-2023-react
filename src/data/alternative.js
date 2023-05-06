@@ -28,26 +28,27 @@ import barraDos from '../assets/logoProjects/logoBarra2.png'
 import zacaro from '../assets/logoProjects/logoZacaro.png'
 
 const alternativeCards = [
-    {id: 1, image: {altCard1}},
-    {id: 2, image: {altCard2}},
+    {id: 1, image: altCard1},
+    {id: 2, image: altCard2}
 ]
 export { alternativeCards }
 
 const alternativeTools = [
-    {id:1, logo:{tool1}, name:'html'},
-    {id:2, logo:{tool2}, name:'css'},
-    {id:3, logo:{tool3}, name:'javaScript'},
-    {id:4, logo:{tool4}, name:'react'},
-    {id:5, logo:{tool5}, name:'sass'},
-    {id:6, logo:{tool6}, name:'bootstrap'},
-    {id:7, logo:{tool7}, name:'tailwind'},
-    {id:8, logo:{tool8}, name:'strapi'},
-    {id:9, logo:{tool9}, name:'remix'},
-    {id:10, logo:{tool10}, name:'git'},
-    {id:11, logo:{tool11}, name:'github'}
+    {id:1, logo:tool1, name:'html'},
+    {id:2, logo:tool2, name:'css'},
+    {id:3, logo:tool3, name:'javaScript'},
+    {id:4, logo:tool4, name:'react'},
+    {id:5, logo:tool5, name:'sass'},
+    {id:6, logo:tool6, name:'bootstrap'},
+    {id:7, logo:tool7, name:'tailwind'},
+    {id:8, logo:tool8, name:'strapi'},
+    {id:9, logo:tool9, name:'remix'},
+    {id:10, logo:tool10, name:'git'},
+    {id:11, logo:tool11, name:'github'}
 ]
 export { alternativeTools }
 
 const alternativeLogoProjects = [
     {id:1, logo:{}, name:''}
 ]
+export { alternativeLogoProjects }
