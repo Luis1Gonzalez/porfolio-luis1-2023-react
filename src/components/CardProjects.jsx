@@ -31,7 +31,7 @@ export default function CardProjects() {
     }
     traslation()
   }, [leng])
-  // console.log(leng)
+
   return (
     <>
 
