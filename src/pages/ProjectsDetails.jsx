@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import useLenguage from "../hooks/useLenguage";
+import Loading from '../components/Loading';
+
 
 export default function ProjectDetails() {
     const { id } = useParams()
-    const [details, setDetails] = useState({})
+    const [details, setDetails] = useState([])
 const { leng } = useLenguage()
 
     useEffect(() => {
@@ -18,7 +20,11 @@ const { leng } = useLenguage()
     }, [])
 
     return (
-        <div className='container min-w-[320px] max-w-[1280px] flex flex-col flex-wrap mx-auto p-6'>
+        <>
+        {details.length === 0 ? (
+            <Loading />
+        ) : (
+            <div className='container min-w-[320px] max-w-[1280px] flex flex-col flex-wrap mx-auto p-6'>
 
             <div className='w-100 '>
 
@@ -69,6 +75,9 @@ const { leng } = useLenguage()
 
             <p className='font-bold text-emerald-300 text-end mt-8 pr-6'><span className='hover:text-yellow-500 hover:cursor-pointer'><Link to='/projects'>Back</Link></span></p>
         </div>
+        )}
+
+        </>
     )
 
 }
