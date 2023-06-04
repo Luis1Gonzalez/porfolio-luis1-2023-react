@@ -26,7 +26,7 @@ import zuccheros from '../assets/logoProjects/logo-zuccherosCakes.jpg'
 import barra from '../assets/logoProjects/logoBarra.png'
 import barraDos from '../assets/logoProjects/logoBarra2.png'
 import zacaro from '../assets/logoProjects/logoZacaro.png'
-import kiosko from '../assets/logoProjects/logo-KioskoApp.png'
+import kiosko from '../assets/logoProjects/logo-kioskoApp.png'
 
 const alternativeCards = [
     {id: 1, image: altCard1},
