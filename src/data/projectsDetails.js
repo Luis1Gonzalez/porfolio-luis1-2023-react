@@ -32,7 +32,7 @@ import measureCryptoCalculator from "../assets/projectsImg/measureCryptoCalculat
 
 import detailsAutoSeguro from "../assets/projectsImg/detailsAutoSeguro.png"
 import detailsAutoSeguro2 from "../assets/projectsImg/detailsAutoSeguro2.png"
-// import measureCryptoCalculator from "../assets/projectsImg/measureCryptoCalculator.png"
+import measureAutoSeguro from "../assets/projectsImg/measureAutoSeguro.png"
 
 
 
@@ -162,13 +162,13 @@ const details = [
 {
     id: 9,
     name: 'Auto - Seguro',
-    spanish1:'',
-    english1:'',
-    spanish2:'',
-    english2:'',
+    spanish1:'La App Auto Seguro, el usuario podrás consultar de forma sencilla y rápida el precio de seguro para coches. Solo necesitas introducir la marca, modelo y año del vehículo y otros datos como cantidad de usuarios, si alguno de estos es menor a 25 años y la extención del seguro de su preferencia para obtener una cotización personalizada."',
+    english1:'The Auto Insurance App, the user can easily and quickly check the price of car insurance. You only need to enter the make, model and year of the vehicle and other data such as number of users, if any of these is less than 25 years old and the insurance extension of your preference to get a personalized quote."',
+    spanish2:'Auto Seguro App fue construida con las tecnologías como HTML, CSS, JavaScript y Tailwind. Se hizo énfasis en la construcción de formularios, fetching y context para facilitar la obtención de datos y su uso desde cualquier componente.',
+    english2:'Auto Seguro App fue construida con las tecnologías como HTML, CSS, JavaScript y Tailwind. Se hizo énfasis en la construcción de formularios, fetching y context para facilitar la obtención de datos y su uso desde cualquier componente.',
     image1: detailsAutoSeguro,
     image2: detailsAutoSeguro2,
-    image3: '',
+    image3: measureAutoSeguro,
     lighthouse: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fauto-seguro.netlify.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext',
     web: 'https://auto-seguro.netlify.app/',
     github: 'https://github.com/Luis1Gonzalez/auto-seguro',
