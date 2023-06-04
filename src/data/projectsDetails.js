@@ -30,6 +30,9 @@ import detailsCryptoCalculator from "../assets/projectsImg/detailsCryptoCalculat
 import detailsCryptoCalculator2 from "../assets/projectsImg/detailsCryptoCalculator2.png"
 import measureCryptoCalculator from "../assets/projectsImg/measureCryptoCalculator.png"
 
+import detailsAutoSeguro from "../assets/projectsImg/detailsAutoSeguro.png"
+import detailsAutoSeguro2 from "../assets/projectsImg/detailsAutoSeguro2.png"
+// import measureCryptoCalculator from "../assets/projectsImg/measureCryptoCalculator.png"
 
 
 
@@ -163,8 +166,8 @@ const details = [
     english1:'',
     spanish2:'',
     english2:'',
-    image1: '',
-    image2: '',
+    image1: detailsAutoSeguro,
+    image2: detailsAutoSeguro2,
     image3: '',
     lighthouse: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fauto-seguro.netlify.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext',
     web: 'https://auto-seguro.netlify.app/',
