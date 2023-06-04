@@ -26,6 +26,7 @@ import zuccheros from '../assets/logoProjects/logo-zuccherosCakes.jpg'
 import barra from '../assets/logoProjects/logoBarra.png'
 import barraDos from '../assets/logoProjects/logoBarra2.png'
 import zacaro from '../assets/logoProjects/logoZacaro.png'
+import kiosko from '../assets/logoProjects/logo-KioskoApp.png'
 
 const alternativeCards = [
     {id: 1, image: altCard1},
@@ -63,6 +64,7 @@ const alternativeLogoProjects = [
     {id:12, logo: zacaro, name:'JZ Diseños & Muebles', url:'jz-disenos-and-muebles', web:'https://jz-disenos-y-muebles.netlify.app/', github:'https://github.com/Luis1Gonzalez/jz-diseno'},
     {id:13, logo: notiApp, name:'News Channel', url:'news-channel', web:'https://newschanel.netlify.app/', github:'https://github.com/Luis1Gonzalez/canal-de-noticias'},
     {id:14, logo: menu, name:'Menú de Muestra', url:'menu-de-muestra', web:'https://menu-muestra.netlify.app/', github:'https://github.com/Luis1Gonzalez/menu-muestra'},
-    {id:15, logo: barraDos, name:'Barra Libre 45 2.0', url:'barra-libre-45-2-0', web:'https://barra-libre-45-2.netlify.app/', github:'https://github.com/Luis1Gonzalez/barra-libre-45-2.0'}
+    {id:15, logo: barraDos, name:'Barra Libre 45 2.0', url:'barra-libre-45-2-0', web:'https://barra-libre-45-2.netlify.app/', github:'https://github.com/Luis1Gonzalez/barra-libre-45-2.0'},
+    {id:16, logo: kiosko, name:'Kiosko - App', url:'kiosko-app', web:'https://kioskoappdeployment-production.up.railway.app/', github:'https://github.com/Luis1Gonzalez/portafolio-luis1gonzalez.git'}
 ]
 export { alternativeLogoProjects }
