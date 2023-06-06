@@ -38,6 +38,22 @@ import detailsPortafolio2022 from "../assets/projectsImg/detailsPortafolio2022.p
 import detailsPortafolio20222 from "../assets/projectsImg/detailsPortafolio20222.png"
 import measurePortafolio2022 from "../assets/projectsImg/measurePortafolio2022.png"
 
+import detailsJZ from "../assets/projectsImg/detailsJZ.png"
+import detailsJZ2 from "../assets/projectsImg/detailsJZ2.png"
+import measureJZ from "../assets/projectsImg/measureJZ.png"
+
+import detailsMyCities from "../assets/projectsImg/detailsMyCities.png"
+import detailsMyCities2 from "../assets/projectsImg/detailsMyCities2.png"
+import measureMyCities from "../assets/projectsImg/measureMyCities.png"
+
+import detailsNewsChannel from "../assets/projectsImg/detailsNewsChannel.png"
+import detailsNewsChannel2 from "../assets/projectsImg/detailsNewsChannel2.png"
+import measureNewsChannel from "../assets/projectsImg/measureNewsChannel.png"
+
+import detailsMenu from "../assets/projectsImg/detailsMenu.png"
+import detailsMenu2 from "../assets/projectsImg/detailsMenu2.png"
+import measureMenu from "../assets/projectsImg/measureMenu.png"
+
 
 
 const details = [
@@ -194,13 +210,13 @@ const details = [
 {
     id: 11,
     name: 'My Cities',
-    spanish1:'',
-    english1:'',
-    spanish2:'',
-    english2:'',
-    image1: '',
-    image2: '',
-    image3: '',
+    spanish1:'My Cities, un sitio web donde el visitante podra encontrar información y fotografías de ciudades de todo el mundo. En My Cities, se encontrará datos interesantes como la extensión y población de las ciudades, sino también datos curiosos Además, he incluido una breve descripción de mi experiencia en cada una de estas ciudades que he visitado. También he creado una sección de souvenirs que el usuario podria comprar en esta página web. Además he habilitado un carrito de compras para practicar la funcionalidad de la venta.',
+    english1:'My Cities, a website where the visitor can find information and photographs of cities around the world. In My Cities, you will find interesting data such as the extension and population of the cities, but also curious facts. In addition, I have included a brief description of my experience in each of these cities that I have visited. I have also created a section of souvenirs that the user could buy in this web page. I have also enabled a shopping cart to practice the functionality of the sale.',
+    spanish2:'En la elaboración de este sitio web utilicé para el frontend tecnologías como HTML, CSS, JavaScript, React Remix y Tailwind logrando una buena estética y funcionalidad. Para el backend, configuramos Strapi, Render y Cloudinary para asegurarnos de que la página sea rápida y eficiente.',
+    english2:'In the development of this website I used for the frontend technologies such as HTML, CSS, JavaScript, React Remix and Tailwind achieving a good aesthetics and functionality. For the backend, we configured Strapi, Render and Cloudinary to make sure the page is fast and efficient.',
+    image1: detailsMyCities,
+    image2: detailsMyCities2,
+    image3: measureMyCities,
     lighthouse: '',
     web: 'https://mycities.vercel.app/',
     github: 'https://github.com/Luis1Gonzalez/MyCitiesRemix',
@@ -209,13 +225,13 @@ const details = [
 {
     id: 12,
     name: 'JZ Diseños & Muebles',
-    spanish1:'',
-    english1:'',
-    spanish2:'',
-    english2:'',
-    image1: '',
-    image2: '',
-    image3: '',
+    spanish1:'Esta página web fue creada para un cliente del Perú ofrece servicios elaboración de muebles de madera y reformas en general. En la página de inicio, se encuentra una breve descripción de la empresa, también tiene otra para mostrar los servicios que ofrece y una galería de imágenes que muestra algunos de los proyectos más recientes y relevantes. Además, en la sección "Clientes", se puede leer los comentarios y testimonios de algunos de los clientes satisfechos. Y si el visitante está interesado en sus servicios, puede ponerse en contacto a través de los enlaces de "Contacto".',
+    english1:'This web page was created for a client from Peru that offers wood furniture elaboration services and reforms in general. On the home page, you will find a brief description of the company, another one to show the services offered and an image gallery that shows some of the most recent and relevant projects. In addition, in the "Clients" section, one can read comments and testimonials from some of the satisfied clients. And if the visitor is interested in their services, they can get in touch through the "Contact" links.',
+    spanish2:'La App ha sido creada utilizando las últimas tecnologías web como HTML, CSS, JavaScript, ReactJS, Bootstrap y React-Bootstrap. Estas tecnologías permiten ofrecer una experiencia de usuario fluida y elegante en todos los dispositivos. El cliente ha expresado su satisfacción con este trabajo y yo orgulloso de haber servido bien.',
+    english2:'The App has been created using the latest web technologies such as HTML, CSS, JavaScript, ReactJS, Bootstrap and React-Bootstrap. These technologies allow us to deliver a smooth and elegant user experience on all devices. The client has expressed satisfaction with this work and I am proud to have served well.',
+    image1: detailsJZ,
+    image2: detailsJZ2,
+    image3: measureJZ,
     lighthouse: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fjz-disenos-y-muebles.netlify.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext',
     web: 'https://jz-disenos-y-muebles.netlify.app/',
     github: 'https://github.com/Luis1Gonzalez/jz-diseno',
@@ -223,14 +239,14 @@ const details = [
 
 {
     id: 13,
-    name: 'https://newschanel.netlify.app/',
-    spanish1:'',
-    english1:'',
-    spanish2:'',
-    english2:'',
-    image1: '',
-    image2: '',
-    image3: '',
+    name: 'NewsChannel',
+    spanish1:'News Channel es un sitio web que ofrece noticias actualizadas de todo el mundo en inglés. El sitio web tiene dos secciones en las que los usuarios pueden filtrar las noticias según sus intereses. Las secciones disponibles son todo, negocios, mundo, política, startups, entretenimiento, miscelánea, salud, hatke, automóvil, deportes y tecnología. Los usuarios pueden navegar fácilmente por el sitio web y mantenerse informados sobre la actualidad.',
+    english1:'News Channel is a website that provides up-to-date news from all over the world in English. The website has two sections where users can filter news according to their interests. The sections available are all, business, world, politics, startups, entertainment, miscellaneous, health, hatke, automobile, sports, and technology. Users can easily navigate through the website and stay informed on current events.',
+    spanish2:'Para crear News Channel, utilizamos HTML, CSS, JavaScript y React. Para dar al sitio web un aspecto pulido, utilizamos la biblioteca MUI que demostró ser completa y fácil de usar. Además, implementamos fetching para obtener las últimas noticias que se muestran en el sitio web. News Channel es un sitio web fácil de usar que proporciona actualizaciones de noticias oportunas en un formato visualmente atractivo.',
+    english2:'To create News Channel, we used HTML, CSS, JavaScript, and React. To give the website a polished look and feel, we utilized the MUI library which proved to be comprehensive and easy to use. Additionally, we implemented fetching to obtain the latest news stories that are displayed on the website. News Channel is a user-friendly website that provides timely news updates in a visually appealing format.',
+    image1: detailsNewsChannel,
+    image2: detailsNewsChannel2,
+    image3: measureNewsChannel,
     lighthouse: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fnewschanel.netlify.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext',
     web: 'https://newschanel.netlify.app/',
     github: 'https://github.com/Luis1Gonzalez/canal-de-noticias',
@@ -243,9 +259,9 @@ const details = [
     english1:'',
     spanish2:'',
     english2:'',
-    image1: '',
-    image2: '',
-    image3: '',
+    image1: detailsMenu,
+    image2: detailsMenu2,
+    image3: measureMenu,
     lighthouse: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fmenu-muestra.netlify.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext',
     web: 'https://menu-muestra.netlify.app/',
     github: 'https://github.com/Luis1Gonzalez/menu-muestra',
