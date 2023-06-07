@@ -301,7 +301,7 @@ const details = [
     image3: measureKk,
     lighthouse: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkioskoappdeployment-production.up.railway.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext',
     web: 'https://kioskoappdeployment-production.up.railway.app/',
-    github: 'https://github.com/Luis1Gonzalez/portafolio-luis1gonzalez.git',
+    github: 'https://github.com/Luis1Gonzalez/kioskoapp_deployment.git',
 },
 
 ]
