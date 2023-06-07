@@ -58,9 +58,9 @@ import detailsBL45 from "../assets/projectsImg/detailsBL45.png"
 import detailsBL452 from "../assets/projectsImg/detailsBL452.png"
 import measureBL45 from "../assets/projectsImg/measureBL45.png"
 
-import detailsKk from "../assets/projectsImg/detailsBL45.png"
-import detailsKk2 from "../assets/projectsImg/detailsBL452.png"
-import measureKk from "../assets/projectsImg/measureBL45.png"
+import detailsKk from "../assets/projectsImg/detailsKk.png"
+import detailsKk2 from "../assets/projectsImg/detailsKk2.png"
+import measureKk from "../assets/projectsImg/measureKk.png"
 
 
 const details = [
