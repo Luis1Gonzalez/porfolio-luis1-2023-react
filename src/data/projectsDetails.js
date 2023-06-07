@@ -54,6 +54,13 @@ import detailsMenu from "../assets/projectsImg/detailsMenu.png"
 import detailsMenu2 from "../assets/projectsImg/detailsMenu2.png"
 import measureMenu from "../assets/projectsImg/measureMenu.png"
 
+import detailsBL45 from "../assets/projectsImg/detailsBL45.png"
+import detailsBL452 from "../assets/projectsImg/detailsBL452.png"
+import measureBL45 from "../assets/projectsImg/measureBL45.png"
+
+import detailsKk from "../assets/projectsImg/detailsBL45.png"
+import detailsKk2 from "../assets/projectsImg/detailsBL452.png"
+import measureKk from "../assets/projectsImg/measureBL45.png"
 
 
 const details = [
@@ -255,10 +262,10 @@ const details = [
 {
     id: 14,
     name: 'Menú de Muestra',
-    spanish1:'',
-    english1:'',
-    spanish2:'',
-    english2:'',
+    spanish1:'Este menú interactivo en línea permite a los usuarios ver los platos ofrecidos en un restaurante de manera fácil y conveniente. Los comensales pueden acceder al menú a través de un código QR, lo que hace que el proceso sea sin contacto y más seguro aprovechando la experiencia obtenida durante la pandemia del covid 19.',
+    english1:'This interactive online menu allows users to view the dishes offered at a restaurant easily and conveniently. Diners can access the menu through a QR code, making the process contactless and more secure by leveraging the experience gained during the covid 19 pandemic.',
+    spanish2:'Esta aplicación web fue creada usando HTML, CSS, JavaScript y ReactJS. También se utilizaron custom hooks y context para mejorar la funcionalidad del sitio. Gracias a estas tecnologías, el menú interactivo es altamente personalizable y fácil de usar para los clientes del restaurante. En general, esta aplicación web es una solución innovadora para mejorar la experiencia del cliente en el restaurante mientras se mantiene la seguridad y la eficiencia del servicio.',
+    english2:'This web application was created using HTML, CSS, JavaScript and ReactJS. Custom hooks and context were also used to enhance the functionality of the site. Thanks to these technologies, the interactive menu is highly customizable and easy to use for restaurant customers. Overall, this web application is an innovative solution to improve the customer experience in the restaurant while maintaining security and service efficiency.',
     image1: detailsMenu,
     image2: detailsMenu2,
     image3: measureMenu,
@@ -270,13 +277,13 @@ const details = [
 {
     id: 15,
     name: 'Barra Libre 45 2.0',
-    spanish1:'',
-    english1:'',
-    spanish2:'',
-    english2:'',
-    image1: '',
-    image2: '',
-    image3: '',
+    spanish1:'La App Barra Libre 45 2.0 es una actualización de la App web Barra Libre 45, cuenta con un formulario que permite al usuario filtrar las bebidas según sus ingredientes, nombre o categoría. Los datos de las bebidas se obtienen haciendo fetching al API CocktailDB, lo que asegura una amplia variedad de opciones para el usuario, ya que esta api cuenta con una lista de mas de 200 cocteles.',
+    english1:'The Barra Libre 45 2.0 App is an update of the Barra Libre 45 web App, it has a form that allows the user to filter the drinks according to their ingredients, name or category. The drinks data is obtained by fetching the CocktailDB API, which ensures a wide variety of options for the user, since this api has a list of more than 200 cocktails.',
+    spanish2:'La App fue construida haciendo uso de HTML, CSS, JavaScript, React, Tailwind y Bootstrap. Con esta combinación de herramientas, se logró crear una interfaz amigable y fácil de usar para el usuario. ¡Espero que esta descripción sea útil! Si necesitas algo más, no dudes en preguntar.',
+    english2:"The App was built using HTML, CSS, JavaScript, React, Tailwind and Bootstrap. With this combination of tools, we managed to create a user friendly and easy to use interface for the user, I hope this description is useful! If you need anything else, don't hesitate to ask.",
+    image1: detailsBL45,
+    image2: detailsBL452,
+    image3: measureBL45,
     lighthouse: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fbarra-libre-45-2.netlify.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext',
     web: 'https://barra-libre-45-2.netlify.app/',
     github: 'https://github.com/Luis1Gonzalez/barra-libre-45-2.0',
@@ -285,13 +292,13 @@ const details = [
 {
     id: 16,
     name: 'KioskoApp',
-    spanish1:'',
-    english1:'',
-    spanish2:'',
-    english2:'',
-    image1: '',
-    image2: '',
-    image3: '',
+    spanish1:'La App web KioskoApp es una excelente solución para las cafeterías que buscan mejorar su proceso de ventas. Esta plataforma funciona como un kiosko de venta de productos, donde el cliente puede seleccionar los productos que desea y una vez terminada su orden, esta se refleja en la pantalla de la tienda para que los empleados puedan preparar su pedido. De esta manera, se agiliza el proceso de compra y se reduce el tiempo de espera del cliente.',
+    english1:"The KioskoApp web App is an excellent solution for coffee shops looking to improve their sales process. This platform works as a product sales kiosk, where the customer can select the products they want and, once their order is completed, it is reflected on the store's screen so that employees can prepare their order. In this way, the purchase process is streamlined and the customer's waiting time is reduced.",
+    spanish2:'En cuanto a su desarrollo, la App fue creada en el frontend con HTML, CSS, JavaScript y Tailwind, lo que garantiza una experiencia de usuario fluida e intuitiva. Además, para el backend se utilizó Prisma y MySQL, lo que permite un almacenamiento seguro y eficiente de los datos. En definitiva, esta App web es una excelente opción para las cafeterías que buscan mejorar su proceso de ventas y ofrecer una experiencia de compra más rápida y sencilla a sus clientes.',
+    english2:'As for its development, the App was created on the frontend with HTML, CSS, JavaScript and Tailwind, which guarantees a fluid and intuitive user experience. In addition, Prisma and MySQL were used for the backend, which allows for secure and efficient data storage. All in all, this web App is an excellent option for coffee shops looking to improve their sales process and offer a faster and easier shopping experience to their customers.',
+    image1: detailsKk,
+    image2: detailsKk2,
+    image3: measureKk,
     lighthouse: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkioskoappdeployment-production.up.railway.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext',
     web: 'https://kioskoappdeployment-production.up.railway.app/',
     github: 'https://github.com/Luis1Gonzalez/portafolio-luis1gonzalez.git',
