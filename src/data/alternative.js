@@ -11,6 +11,11 @@ import tool8 from '../assets/tools/8 strapi.png'
 import tool9 from '../assets/tools/9 remix.png'
 import tool10 from '../assets/tools/10 git.png'
 import tool11 from '../assets/tools/11 github.png'
+
+import tool12 from '../assets/tools/12 next.png'
+import tool13 from '../assets/tools/13 prisma.png'
+import tool14 from '../assets/tools/14 postman.png'
+
 import autoseguro from '../assets/logoProjects/logo-autosegur.png'
 import controlGastos from '../assets/logoProjects/logo-controlGastos.png'
 import cryptoCalcul from '../assets/logoProjects/logo-cryptoCalcul.png'
@@ -45,7 +50,10 @@ const alternativeTools = [
     {id:8, logo:tool8, name:'strapi'},
     {id:9, logo:tool9, name:'remix'},
     {id:10, logo:tool10, name:'git'},
-    {id:11, logo:tool11, name:'github'}
+    {id:11, logo:tool11, name:'github'},
+    {id:12, logo:tool12, name:'next'},
+    {id:13, logo:tool13, name:'prisma'},
+    {id:14, logo:tool14, name:'postman'}
 ]
 export { alternativeTools }
 
