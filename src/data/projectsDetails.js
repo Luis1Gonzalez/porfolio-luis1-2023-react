@@ -62,9 +62,9 @@ import detailsKk from "../assets/projectsImg/detailsKk.png"
 import detailsKk2 from "../assets/projectsImg/detailsKk2.png"
 import measureKk from "../assets/projectsImg/measureKk.png"
 
-import detailsSysControl from "../assets/projectsImg/detailsSysControl"
-import detailsSysControl2 from "../assets/projectsImg/detailsSysControl2"
-import measureSysControl from "../assets/projectsImg/measureSysControl.png"
+import detailsSysControl from "../assets/projectsImg/detailsLgSystem.png"
+import detailsSysControl2 from "../assets/projectsImg/detailsLgSystem2.png"
+import measureSysControl from "../assets/projectsImg/measureLgSystem.png"
 
 
 const details = [
@@ -321,7 +321,7 @@ const details = [
     lighthouse: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Flg-syscontrol-production.up.railway.app%2Flobby&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext#',
     web: 'https://lg-syscontrol-production.up.railway.app/',
     github: 'https://github.com/Luis1Gonzalez/lg-sysControl',
-},
+}
 
 ]
 export { details }
