@@ -62,6 +62,10 @@ import detailsKk from "../assets/projectsImg/detailsKk.png"
 import detailsKk2 from "../assets/projectsImg/detailsKk2.png"
 import measureKk from "../assets/projectsImg/measureKk.png"
 
+import detailsSysControl from "../assets/projectsImg/detailsSysControl"
+import detailsSysControl2 from "../assets/projectsImg/detailsSysControl2"
+import measureSysControl from "../assets/projectsImg/measureSysControl.png"
+
 
 const details = [
 {
@@ -302,6 +306,21 @@ const details = [
     lighthouse: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fkioskoappdeployment-production.up.railway.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext',
     web: 'https://kioskoappdeployment-production.up.railway.app/',
     github: 'https://github.com/Luis1Gonzalez/kioskoapp_deployment.git',
+},
+
+{
+    id: 17,
+    name: 'Lg-SysControl ',
+    spanish1:'La App web KioskoApp es una excelente solución para las cafeterías que buscan mejorar su proceso de ventas. Esta plataforma funciona como un kiosko de venta de productos, donde el cliente puede seleccionar los productos que desea y una vez terminada su orden, esta se refleja en la pantalla de la tienda para que los empleados puedan preparar su pedido. De esta manera, se agiliza el proceso de compra y se reduce el tiempo de espera del cliente.',
+    english1:"The KioskoApp web App is an excellent solution for coffee shops looking to improve their sales process. This platform works as a product sales kiosk, where the customer can select the products they want and, once their order is completed, it is reflected on the store's screen so that employees can prepare their order. In this way, the purchase process is streamlined and the customer's waiting time is reduced.",
+    spanish2:'En cuanto a su desarrollo, la App fue creada en el frontend con HTML, CSS, JavaScript y Tailwind, lo que garantiza una experiencia de usuario fluida e intuitiva. Además, para el backend se utilizó Prisma y MySQL, lo que permite un almacenamiento seguro y eficiente de los datos. En definitiva, esta App web es una excelente opción para las cafeterías que buscan mejorar su proceso de ventas y ofrecer una experiencia de compra más rápida y sencilla a sus clientes.',
+    english2:'As for its development, the App was created on the frontend with HTML, CSS, JavaScript and Tailwind, which guarantees a fluid and intuitive user experience. In addition, Prisma and MySQL were used for the backend, which allows for secure and efficient data storage. All in all, this web App is an excellent option for coffee shops looking to improve their sales process and offer a faster and easier shopping experience to their customers.',
+    image1: detailsSysControl,
+    image2: detailsSysControl2,
+    image3: measureSysControl,
+    lighthouse: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Flg-syscontrol-production.up.railway.app%2Flobby&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext#',
+    web: 'https://lg-syscontrol-production.up.railway.app/',
+    github: 'https://github.com/Luis1Gonzalez/lg-sysControl',
 },
 
 ]
