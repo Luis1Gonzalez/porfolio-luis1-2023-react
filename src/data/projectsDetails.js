@@ -66,6 +66,10 @@ import detailsSysControl from "../assets/projectsImg/detailsLgSystem.png"
 import detailsSysControl2 from "../assets/projectsImg/detailsLgSystem2.png"
 import measureSysControl from "../assets/projectsImg/measureLgSystem.png"
 
+import detailsUptask from "../assets/projectsImg/detailsUptask.png"
+import detailsUptask2 from "../assets/projectsImg/detailsUptask2.png"
+import measureUptask from "../assets/projectsImg/measureUptask.png"
+
 
 const details = [
 {
@@ -310,7 +314,7 @@ const details = [
 
 {
     id: 17,
-    name: 'Lg-SysControl ',
+    name: 'Lg-SysControl',
     spanish1:'Lg-SysControl es App desarrollada para una empresa de fabricación de paneles, puertas y ventanas, esta aplicación es un sistema eficiente y actualizado para gestionar las órdenes de fabricación. Con una interfaz responsiva, intuitiva y amigable, la gerencia de producción es encargada de cargar las series indicando los procesos involucrados. Los operarios que participan en cada fase del proceso deberán marcar el cierre de las etapas a medida que las completan, lo que permite a los líderes del proceso tener acceso en tiempo real a toda la información del progreso de fabricación.',
     english1:"Lg-SysControl is an App developed for a manufacturing company of panels, doors and windows, this application is an efficient and updated system to manage manufacturing orders. With a responsive, intuitive and friendly interface, the production management is in charge of loading the series indicating the processes involved. Operators involved in each stage of the process should mark the closing of the stages as they complete them, allowing process leaders to have real-time access to all the information on the manufacturing progress.",
     spanish2:'Esta aplicación está construida con tecnologías como HTML, CSS, JavaScript, React, TailwindCss, Next.js y Prisma. Al usar React se utilizaron recursos como context, y custom hooks, tailwindCss para gestionar los estilos, headlessui para elaborar las ventanas modales que se usaron en la construcción del Frontend de esta herramienta y con la integración de Next.js y Prisma en el Backend asegura un rendimiento óptimo y una base de datos robusta para almacenar y administrar los datos de manera segura. Con esta App web, la empresa puede optimizar sus operaciones, mejorar la comunicación entre los equipos y aumentar la eficiencia en su proceso productivo. PASSWORD:asdf',
@@ -321,6 +325,21 @@ const details = [
     lighthouse: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Flg-syscontrol-production.up.railway.app%2Flobby&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext#',
     web: 'https://lg-syscontrol-production.up.railway.app/',
     github: 'https://github.com/Luis1Gonzalez/lg-sysControl',
+},
+
+{
+    id: 18,
+    name: 'Administrador de Proyectos',
+    spanish1:'Lg-SysControl es App desarrollada para una empresa de fabricación de paneles, puertas y ventanas, esta aplicación es un sistema eficiente y actualizado para gestionar las órdenes de fabricación. Con una interfaz responsiva, intuitiva y amigable, la gerencia de producción es encargada de cargar las series indicando los procesos involucrados. Los operarios que participan en cada fase del proceso deberán marcar el cierre de las etapas a medida que las completan, lo que permite a los líderes del proceso tener acceso en tiempo real a toda la información del progreso de fabricación.',
+    english1:"Lg-SysControl is an App developed for a manufacturing company of panels, doors and windows, this application is an efficient and updated system to manage manufacturing orders. With a responsive, intuitive and friendly interface, the production management is in charge of loading the series indicating the processes involved. Operators involved in each stage of the process should mark the closing of the stages as they complete them, allowing process leaders to have real-time access to all the information on the manufacturing progress.",
+    spanish2:'Esta aplicación está construida con tecnologías como HTML, CSS, JavaScript, React, TailwindCss, Next.js y Prisma. Al usar React se utilizaron recursos como context, y custom hooks, tailwindCss para gestionar los estilos, headlessui para elaborar las ventanas modales que se usaron en la construcción del Frontend de esta herramienta y con la integración de Next.js y Prisma en el Backend asegura un rendimiento óptimo y una base de datos robusta para almacenar y administrar los datos de manera segura. Con esta App web, la empresa puede optimizar sus operaciones, mejorar la comunicación entre los equipos y aumentar la eficiencia en su proceso productivo. PASSWORD:asdf',
+    english2:'This application is built with technologies such as HTML, CSS, JavaScript, React, TailwindCss, Next.js and Prisma. By using React resources such as context, and custom hooks were used, tailwindCss to manage styles, headlessui to elaborate the modal windows that were used in the construction of the Frontend of this tool and with the integration of Next.js and Prisma in the Backend ensures optimal performance and a robust database to store and manage data securely. With this web App, the company can optimize its operations, improve communication between teams and increase efficiency in its production process. PASSWORD:asdf',
+    image1: detailsUptask,
+    image2: detailsUptask2,
+    image3: measureUptask,
+    lighthouse: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fprojects-admin.vercel.app%2Fproyectos&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext#',
+    web: 'https://projects-admin.vercel.app/',
+    github: 'https://github.com/Luis1Gonzalez/projects_admin_frontend',
 }
 
 ]

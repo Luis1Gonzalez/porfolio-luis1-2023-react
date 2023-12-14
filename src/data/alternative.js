@@ -34,6 +34,7 @@ import barraDos from '../assets/logoProjects/logoBarra2.png'
 import zacaro from '../assets/logoProjects/logoZacaro.png'
 import kiosko from '../assets/logoProjects/logo-kioskoApp.png'
 import sysControl from '../assets/logoProjects/logo-SysControl.png'
+import uptask from '../assets/logoProjects/logo-uptask.png'
 
 const alternativeCards = [
     {id: 1, image: altCard1},
@@ -61,6 +62,7 @@ const alternativeTools = [
 export { alternativeTools }
 
 const alternativeLogoProjects = [
+    {id:18, logo: uptask, name:'Administrador de Proyectos', url:'Projects-Manager', web:'https://projects-admin.vercel.app/', github:'https://github.com/Luis1Gonzalez/projects_admin_frontend'},
     {id:17, logo: sysControl, name:'LG - SysControl', url:'LG-SysControl', web:'https://lg-syscontrol-production.up.railway.app/', github:'https://github.com/Luis1Gonzalez/lg-sysControl'},
     {id:16, logo: kiosko, name:'Kiosko - App', url:'kiosko-app', web:'https://kioskoappdeployment-production.up.railway.app/', github:'https://github.com/Luis1Gonzalez/portafolio-luis1gonzalez.git'},
     {id:15, logo: barraDos, name:'Barra Libre 45 2.0', url:'barra-libre-45-2-0', web:'https://barra-libre-45-2.netlify.app/', github:'https://github.com/Luis1Gonzalez/barra-libre-45-2.0'},
